@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Eventra — Full-Stack Event Platform
 
-## Getting Started
+Eventra is a full-stack event management platform built with Next.js.  
+It allows users to browse events, view detailed event pages, and manage event data through API routes.
 
-First, run the development server:
+This project was built as a hands-on learning experience while coding along with a long-form tutorial.  
+All code was written and tested manually to deeply understand how the system works end-to-end.
+
+---
+
+## ✨ Features
+
+- Dynamic home page listing upcoming events
+- Event detail pages with related events
+- Full CRUD functionality using Next.js API routes
+- Cloud-based image uploads
+- Server and client component separation
+- Analytics integration for tracking user interactions
+- Modern caching and performance optimizations
+
+---
+
+## ⚙️ Tech Stack
+
+- **Next.js (App Router)**
+- **TypeScript**
+- **Tailwind CSS**
+- **MongoDB**
+- **Mongoose**
+- **Cloudinary**
+- **PostHog Analytics**
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js
+- npm
+- Git
+
+### Installation
+
+```bash
+git clone https://github.com/iibrahimx/eventra.git
+cd eventra
+npm install
+```
+
+### Environment Variables
+
+Create a `.env` file in the root directory:
+
+```bash
+NEXT_PUBLIC_BASE_URL=http://localhost:3000
+MONGODB_URI=
+CLOUDINARY_URL=
+NEXT_PUBLIC_POSTHOG_KEY=
+NEXT_PUBLIC_POSTHOG_HOST=https://eu.i.posthog.com
+```
+
+### Run the project
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📸 Screenshots
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Home Page
 
-## Learn More
+### Event Details
 
-To learn more about Next.js, take a look at the following resources:
+## 📚 Learning Notes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project helped reinforce:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Full-stack development with Next.js
+- API design and database integration
+- Real-world project structure
+- Debugging and incremental development
 
-## Deploy on Vercel
+## 📄 License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is for educational purposes.
