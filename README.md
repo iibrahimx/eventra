@@ -1,22 +1,20 @@
-# Eventra — Full-Stack Event Platform
+# Eventra — Event Platform Built with Next.js
 
-Eventra is a full-stack event management platform built with Next.js.  
-It allows users to browse events, view detailed event pages, and manage event data through API routes.
+Eventra is an event platform built with Next.js that allows users to browse events and view detailed event pages.
 
 This project was built as a hands-on learning experience while coding along with a long-form tutorial.  
-All code was written and tested manually to deeply understand how the system works end-to-end.
+The focus of this implementation was understanding the Next.js App Router, routing patterns, data fetching, and UI composition.
 
 ---
 
 ## ✨ Features
 
-- Dynamic home page listing upcoming events
-- Event detail pages with related events
-- Full CRUD functionality using Next.js API routes
+- Home page displaying available events
+- Event detail pages
+- Data fetching via API routes
 - Cloud-based image uploads
 - Server and client component separation
-- Analytics integration for tracking user interactions
-- Modern caching and performance optimizations
+- Responsive UI built with Tailwind CSS
 
 ---
 
@@ -28,7 +26,6 @@ All code was written and tested manually to deeply understand how the system wor
 - **MongoDB**
 - **Mongoose**
 - **Cloudinary**
-- **PostHog Analytics**
 
 ---
 
@@ -56,8 +53,6 @@ Create a `.env` file in the root directory:
 NEXT_PUBLIC_BASE_URL=http://localhost:3000
 MONGODB_URI=
 CLOUDINARY_URL=
-NEXT_PUBLIC_POSTHOG_KEY=
-NEXT_PUBLIC_POSTHOG_HOST=https://eu.i.posthog.com
 ```
 
 ### Run the project
@@ -72,16 +67,21 @@ Open http://localhost:3000 in your browser.
 
 ### Home Page
 
+![Home Page](/public/screenshots/home.png)
+
 ### Event Details
+
+![Event Details](/public/screenshots/event-details.png)
 
 ## 📚 Learning Notes
 
 This project helped reinforce:
 
-- Full-stack development with Next.js
-- API design and database integration
-- Real-world project structure
-- Debugging and incremental development
+- Next.js App Router fundamentals
+- File-based routing and layouts
+- API route integration
+- Data fetching patterns
+- Component composition in Next.js
 
 ## 📄 License
 
